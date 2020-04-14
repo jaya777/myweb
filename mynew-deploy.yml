@@ -17,19 +17,3 @@ spec:
         image: jayaraju/my-new
         ports:
         - containerPort: 8080
----
-# mynew-service.yml
-apiVersion: v1
-kind: Service
-metadata:
-  name: my-new
-  labels:
-    app: my-new
-spec:
-  selector:
-    app: my-new
-  type: NodePort
-  ports:
-  - nodePort: 3100 
-    prot: 8080
-    targetPort: 8080
