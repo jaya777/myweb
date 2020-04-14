@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-new
+spec:
+  selector:
+    matchLabels:
+      app: my-new
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: my-new
+    spec:
+      containers:
+      - name: my-new
+        image: jayaraju/my-new
+        ports:
+        - containerPort: 80
+-----
+#mynew-service.yml
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-new
+  labels:
+    app: my-new
+spec:
+  selector:
+    app: my-new
+  type: NodePort
+  ports:
+  - nodePort: 3100
+    prot: 80
+    targetport:80
