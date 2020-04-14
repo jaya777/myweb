@@ -17,8 +17,8 @@ spec:
         image: jayaraju/my-new
         ports:
         - containerPort: 80
------
-#mynew-service.yml
+---
+# mynew-service.yml
 apiVersion: v1
 kind: Service
 metadata:
