@@ -16,7 +16,7 @@ spec:
       - name: my-new
         image: jayaraju/my-new
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 ---
 # mynew-service.yml
 apiVersion: v1
@@ -30,6 +30,6 @@ spec:
     app: my-new
   type: NodePort
   ports:
-  - nodePort: 3100
-    prot: 80
-    targetport:80
+  - nodePort: 3100 
+    prot: 8080
+    targetPort: 8080
