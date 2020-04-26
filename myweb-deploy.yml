@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myweb
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mynew
-        image: jayaraju/my-new:2.1.0
+        image: jayaraju/my-new:1.1.0
         ports:
         - containerPort: 8080
 ---
