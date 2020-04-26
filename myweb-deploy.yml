@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: mynew
-        image: jayaraju/my-new
+        image: jayaraju/my-new:2.1.0
         ports:
         - containerPort: 8080
 ---
