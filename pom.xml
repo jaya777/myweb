@@ -5,7 +5,7 @@
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.1-SNAPSHOT</version>
-	<name>myweb Maven Webapp</name>
+	<name>myweb</name>
 	<url>http://maven.apache.org</url>
 	<!-- This is comment in XML-->
 	<dependencies>
